@@ -1,0 +1,764 @@
+body{
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    background-image: url('../image/download1.jpg');
+    background-size: 100%;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+/*************LOADER*****************/
+#loader{
+  height: 1500px;
+  width: 1500px;
+  background-color: #000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 999;
+}
+
+#loader img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+/*****MAIN CONTENT*****/
+  .container .jumbotron{
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  #video-tile, #gallery-tile, #map-tile{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #000;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  #video-tile:hover, #gallery-tile:hover, #map-tile:hover{
+    box-shadow: 0 1px 5px 1px #e0dede;
+  }
+
+  #video-tile{
+    background: url('../videos/v1.mp4') no-repeat;
+    background-position: center;
+  }
+
+  #gallery-tile{
+    background: url('../image/gallery-tile.png') no-repeat;
+    background-position: center;
+  }
+
+  #video-tile span, #gallery-tile span, #map-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    font-family: 'Changa', sans-serif;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+  }
+
+  /*******MAIN CONTENT OF GALLERY-CATEGORY-TILE*******/
+    .category-tile{
+      position: relative;
+      border: 2px solid #000;
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 50px;
+    }
+    .category-tile span{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      background-color: #000;
+      color: #fff;
+      opacity: .8;
+    }
+    .category-tile:hover{
+      box-shadow: 0 1px 5px 1px #000;
+    }
+    #gallery-category-tile{
+    color: #000;
+    }
+    #gallery-category-tile + div{
+      margin-bottom: 50px;
+      color: #000;
+    }
+
+  /*******END MAIN CONTENT OF GALLERY-CATEGORY-TILE*******/
+
+  /*******MAIN CONTENT OF BRANCH1-GAL PAGE*******/
+  /*  .gallery-item-tile{
+      margin-bottom: 25px;
+    }
+    .gallery-item-tile hr{
+      width: 80%;
+    }
+    .gallery-item-tile .gallery-item-date{
+      font-size: 1.1em;
+      text-align: right;
+      margin-top: -15px;
+      margin-right: -15px;
+      color: #000;
+    }
+    .gallery-item-tile .galler-item-date span{
+      font-style: italic;
+      color: #000;
+    }
+    .gallery-item-photo{
+      position: relative;
+      border: 2px solid #000;
+      overflow: hidden;
+      padding: 0;
+      margin-right: -15px;
+      margin-left: auto;
+      margin-bottom: 20px;
+      max-width: 250px;
+    }
+    .gallery-item-photo div{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 80px;
+      background-color: ##557c3e;
+      text-align: center;
+      color: #000;
+    }
+    .gallery-item-description{
+      padding-right: 30px;
+    }
+    h3.gallery-item-title{
+      margin: 0 0 10px;
+      color: #000;
+
+    }
+    .gallery-item-details{
+      font-size: .9em;
+      font-style: italic;
+      color: #000;
+    }*/
+
+
+/***********************************END OF MAIN CONTENT********************************/
+
+/****************************HEADER**********************************/
+#header-nav{
+  background-color: #000;
+  /*background-image: url('../image/download4.jpg');*/
+  background-size: 100%;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 5px solid #fff;
+}
+
+.navbar-brand{
+  padding-top: 25px;
+}
+
+.navbar-brand h1{
+  font-family: 'Russo One', sans-serif;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  /*text-shadow: 3px 3px 3px #15479e;*/
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 0.75;
+  padding-top: 30px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+  text-decoration: none;
+}
+
+#nav-list{
+  margin-top: 10px;
+}
+
+.nav-link{
+  color: #fff;
+  text-align: center;
+}
+
+#nav-list .nav-item a:hover{
+  color: #FF4500;
+  background-color: #000000;
+}
+
+.nav-item span{
+  font-size: 1.2em;
+  padding-right: 2rem;
+}
+
+#phone{
+  margin-top: 0px;
+  font-size: 0.6em;
+}
+
+#phone a{
+  text-align: right;
+  padding-bottom: 0px;
+  padding-right: 10px;
+}
+
+#phone div{
+  color: #fff;
+  text-align: right;
+  font-size: 1.4em;
+  padding-right: 15px;
+}
+
+/*giving toggle button color*/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border: 1px solid #66fcf1;
+}
+
+/*fitting branch names inside the navbar*/
+.navbar-header button.navbar-toggle{
+  clear: both;
+}
+
+/*****ASK CLIENT IF HE NEEDS THIS FORMAT*****/
+/*  #collapsable-nav a {
+  font-size: 1.2em;
+}
+
+#collapsable-nav a span{
+  font-size: 1em;
+}*/
+
+#call-btn > a {
+   font-size: 1.5em;
+   display: block;
+   margin: 0 20px;
+   padding: 10px;
+   border: 2px solid #000;
+   background-color: #c5c6c7;
+   color: #15479e;
+ }
+ #xs-name {
+   color: #000;
+   font-weight: bolder;
+   margin-top: 5px;
+   font-size: .7em;
+   letter-spacing: .1em;
+   text-transform: uppercase;
+ }
+
+/****************************************FOOTER********************************************/
+
+.panel-footer{
+  margin-top: 30px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+
+.panel-footer div.row{
+  margin-bottom: 0;
+}
+
+#branch_names p{
+    padding-top: 0;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+#copy-right{
+  padding-top: 20px;
+  text-align: center;
+}
+
+#footer-heading{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#contact-info{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.glyphicon{
+  padding-left: 20px;
+}
+
+.my-info{
+  font-family: 'Dancing Script', cursive;
+  font-size: 15px;
+  padding-left: 120px;
+}
+
+/*
+#hours, #address{
+  line-height: 1.8;
+}
+
+#hours>span, #address>span, #testimonials>span{
+  font-size: 1.3em;
+}
+
+#address p{
+
+}
+
+#testimonials{
+  font-style: italic;
+}
+
+#testimonials p: nth-child(2){
+  margin-top: 25px;
+}
+
+*/
+
+/*********************************MEDIA QURIES********************************************/
+
+/*****LARGE DEVICES*****/
+@media (min-width: 1200px) {
+  #logo-img{
+    background: url('../image/logo.png') no-repeat;
+    width: 185px;
+    height: 180px;
+    margin: 10px 15px 10px 0px;
+    float: left;
+  }
+  .container .jumbotron{
+    background: url('../image/Jumbotron_1200.png') no-repeat;
+    height: 675px;
+  }
+  #contact-box{
+    border-right: 1px solid #000;
+  }
+  .navbar-brand h1{
+    margin-top:40px;
+  }
+  #achievements .top{
+    margin: 0 0 0 53.6em;
+  }
+  #training .top{
+    margin: 0 0 0 53.6em;
+  }
+  #courts .top{
+    margin: 0 0 0 53.6em;
+  }
+  #fun .top{
+    margin: 0 0 0 53.6em;
+  }
+  .video-spacing{
+    padding-left: 70px;
+    margin-bottom: 40px;
+  }
+}
+
+/*****MEDIUM DEVICES*****/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #logo-img{
+    background: url('../image/logo-med.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 120px;
+    float: left;
+  }
+  .navbar-brand h1{
+    font-size: 1.5em;
+    margin:-10px 0 0 20px;
+  }
+  .container .jumbotron{
+    background: url('../image/Jumbotron_992.png') no-repeat;
+    height: 558px;
+  }
+  #contact-box{
+    border-right: 1px solid #000;
+  }
+  #achievements .top{
+    margin: 0 0 0 44.6em;
+  }
+  #training .top{
+    margin: 0 0 0 44.6em;
+  }
+  #courts .top{
+    margin: 0 0 0 44.6em;
+  }
+  #fun .top{
+    margin: 0 0 0 44.6em;
+  }
+}
+
+/*****SMALL DEVICES*****/
+@media (min-width: 770px) and (max-width: 991px) {
+    #nav-list{
+      display: inline;
+    }
+    #logo-img{
+      display: none;
+    }
+    .navbar-brand h1{
+      font-size: 1.5em;
+      text-align: center;
+      margin:20px 200px 0 0;
+    }
+    .container .jumbotron{
+      background: url('../image/Jumbotron_768.png') no-repeat;
+      height: 432px;
+    }
+    #contact-box{
+      border-right: 1px solid #000;
+    }
+    #achievements .top{
+      margin: 0 0 0 32.6em;
+    }
+    #training .top{
+      margin: 0 0 0 32.6em;
+    }
+    #courts .top{
+      margin: 0 0 0 32.6em;
+    }
+    #fun .top{
+      margin: 0 0 0 32.6em;
+    }
+}
+
+/*****XS DEVICES*****/
+@media (max-width: 767px) {
+  #logo-img{
+    display: none;
+  }
+  .container .jumbotron{
+    background: url('../image/Jumbotron_480.png') no-repeat;
+    height: 300px;
+  }
+  .navbar-brand{
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1{
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+  .navbar-brand p{
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .container .jumbotron{
+    box-shadow: 0 0 50px #bfd6d5;
+    border: 2px solid #ccc;
+  }
+  #video-tile, #gallery-tile{
+      margin: 0 auto 15px;
+  }
+
+  .panel-footer section{
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3){
+    margin-bottom: 0;
+  }
+  panel-footer section hr{
+    width: 50%;
+  }
+  .gallery-item-photo{
+    margin-right: auto;
+  }
+  .gallery-item-tile .gallery-item-date{
+    text-align: center;
+  }
+  .gallery-item-description{
+    text-align: center;
+  }
+  #contact-box{
+    border-bottom: 1px solid #000;
+  }
+  .my-info{
+    font-family: 'Dancing Script', cursive;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-right: 120px;
+    text-align: center;
+  }
+  #achievements .top{
+    margin: 0 0 0 23.6em;
+  }
+  #training .top{
+    margin: 0 0 0 23.6em;
+  }
+  #courts .top{
+    margin: 0 0 0 23.6em;
+  }
+  #fun .top{
+    margin: 0 0 0 23.6em;
+  }
+  video{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/***** XXS DEVICES*****/
+
+@media (max-width: 479px) {
+  .container .jumbotron{
+    background: url('../image/Jumbotron_320.png') no-repeat;
+    height: 250px;
+  }
+  #video-tile, #gallery-tile{
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+  .col-xxs-12{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    min-height: 1px;
+  }
+  #contact-box{
+    border-bottom: 1px solid #000;
+  }
+  .my-info{
+    font-family: 'Dancing Script', cursive;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-right: 120px;
+    text-align: center;
+  }
+  #achievements .top{
+    margin: 0 0 0 5.6em;
+  }
+  #training .top{
+    margin: 0 0 0 5.6em;
+  }
+  #courts .top{
+    margin: 0 0 0 5.6em;
+  }
+  #fun .top{
+    margin: 0 0 0 5.6em;
+  }
+}
+
+
+/*************************************ABOUT-US*********************************/
+#about-main-content{
+  color: #000;
+  margin: 20px auto;
+  border: 20px solid #808080;
+  max-width: 1000px;
+  width: 80%;
+  padding: 20px;
+  font-family: Source Sans Pro;
+}
+.about-heading{
+  text-transform: uppercase;
+  font-size: 4.0rem;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+#about-quote{
+  font-family: 'Dancing Script', cursive;
+  font-size: 23px;
+}
+
+.about-p{
+ margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.quote {
+    border-left: 5px solid #808080;
+    padding-left: 5px;
+}
+
+#about-me{
+  padding-top: 20px;
+  font-family: Source Sans Pro;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+#my-img .visible-lg{
+  width:100%;
+}
+#my-img .visible-md{
+  width:100%;
+}
+#my-img .visible-sm{
+  width:100%;
+}
+#my-img .visible-xs{
+  width:100%;
+}
+
+
+/*************************************CONTACT-US*********************************/
+#contact-main-content{
+  color: #000;
+}
+
+#contact-main-content section{
+  padding-top: 50px;
+}
+
+#cont-info {
+  color:#ed4505;
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#contact-heading{
+  padding-top: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#contact-subheading{
+  font-size: 23px;
+  font-family: 'Dancing Script', cursive;
+}
+
+#contact-box span{
+  padding-bottom: 10px;
+}
+
+#contact-box .glyphicon{
+  color: #ed4505;
+}
+
+#contact-box{
+  padding-top: 50px;
+  text-align: center;
+}
+
+#social-heading{
+    font-size: 18px;
+    font-weight:bold;
+    color: #ed4505;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+
+#social-btn{
+  text-align: center;
+  padding: 50px;
+}
+
+#sc2{
+  padding-left: 15px;
+}
+
+/************************************GALLERY CATEGORY TILE*******************************/
+#main-content{
+  font-family: Source Sans Pro;
+}
+#gallery-category-tile{
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#heading-italics{
+  font-family: 'Dancing Script', cursive;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.img-effect img{
+  transition: 1s;
+}
+
+.img-effect img:hover{
+    box-shadow: 0 1px 5px 1px #000;
+    transform: scale(1.1);
+}
+
+h3{
+  color: #000;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+
+.linkss{
+  font-family: 'Lemonada', cursive;
+    margin-bottom: 50px;
+}
+
+.linkss a{
+  color: #000;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+.linkss a:hover{
+    box-shadow: 0 1px 5px 1px #000;
+}
+
+.top{
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  margin-top: 25px;
+  text-align: right;
+}
+
+.top a{
+  color: #000;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.top a:hover{
+  box-shadow: 0 1px 5px 1px #000;
+}
+
+
+#achievements .row{
+  margin-top:30px;
+}
+#training .row{
+  margin-top:30px;
+}
+#courts .row{
+  margin-top:30px;
+}
+#fun .row{
+  margin-top:30px;
+}
+
+/*************VIDEO TILE*******************/
+#videos-page-heading{
+  text-transform: uppercase;
+  color: #000;
+  font-size: 4.0rem;
+  font-weight: bold;
+}
